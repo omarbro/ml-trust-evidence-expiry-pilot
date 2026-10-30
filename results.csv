@@ -1,0 +1,21 @@
+model,change,lr,epoch,amount,test_acc,watermark_acc,hash_matches_M0,ownership_claim_holds
+M0 (original),original,,,,0.9888,1.00,True,True
+fine-tune lr=0.0001 epoch=1,fine-tune,0.0001,1,,0.9908,1.00,False,True
+fine-tune lr=0.0001 epoch=2,fine-tune,0.0001,2,,0.9925,1.00,False,True
+fine-tune lr=0.0001 epoch=3,fine-tune,0.0001,3,,0.9920,1.00,False,True
+fine-tune lr=0.0001 epoch=4,fine-tune,0.0001,4,,0.9920,1.00,False,True
+fine-tune lr=0.0001 epoch=5,fine-tune,0.0001,5,,0.9918,1.00,False,True
+fine-tune lr=0.001 epoch=1,fine-tune,0.001,1,,0.9900,0.99,False,True
+fine-tune lr=0.001 epoch=2,fine-tune,0.001,2,,0.9887,0.90,False,True
+fine-tune lr=0.001 epoch=3,fine-tune,0.001,3,,0.9861,0.66,False,True
+fine-tune lr=0.001 epoch=4,fine-tune,0.001,4,,0.9883,0.55,False,True
+fine-tune lr=0.001 epoch=5,fine-tune,0.001,5,,0.9885,0.27,False,False
+prune 20%,prune,,,0.2,0.9888,1.00,False,True
+prune 40%,prune,,,0.4,0.9890,1.00,False,True
+prune 60%,prune,,,0.6,0.9888,1.00,False,True
+prune 80%,prune,,,0.8,0.9882,1.00,False,True
+prune 90%,prune,,,0.9,0.9854,1.00,False,True
+prune 95%,prune,,,0.95,0.9712,0.50,False,True
+independent seed=100,independent,,,,0.9740,0.11,False,False
+independent seed=101,independent,,,,0.9729,0.14,False,False
+independent seed=102,independent,,,,0.9740,0.13,False,False
